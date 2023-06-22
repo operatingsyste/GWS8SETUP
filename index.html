@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<h6>8-gws-setup.gapp</h6>
+<hr>
+  <title>GWS 8 SETUP</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Project -->
+    
+    <div id="fonts"></div>
+    
+    <center>
+    <div id="ins">
+      <h1> Please wait while set up is loading ...</h1>
+    </div>
+    </center>
+    
+    
+    
+    
+  <script src="main.js"></script>
+  <script>
+  
+  setTimeout (function(){
+    document.body.style.backgroundColor = "grey";
+  Window_Height = 300;
+  Window_Width = 300;
+  Window_Title = "GWS 8 SETUP";
+  Window_Title_Text_Color = "White";
+  Window_Title_Background_Color = "#BACBFF";
+  Window_HTML = '<h3> Do you want to install GWS 8 </h3> <br><br> <button onclick="cont()"> continue </button>';
+  Window_Background_Color = " #010027";
+    Window(Create, "app", "ins");
+    GTG_INIT_FONT();
+    GTG_INIT_FONT_INSTALLATION_LOCATION("fonts");
+    addInbuiltFont(Console, "app");
+    
+    
+
+  }, 5000);
+  
+  
+      
+    var config;
+    
+    function cont(){
+      Window_HTML = '<h3> Select Config </h3> <br><br> <button onclick="conf_py()"> python </button><br><br><button onclick="conf_c()">C/C++</button><br><br><button onclick="conf_js()">Java Script</button>';
+        Window_Height = 300;
+        Window_Width = 300;
+        Window_Title = "GWS 8 SETUP";
+        Window_Title_Text_Color = "White";
+        Window_Title_Background_Color = "#BACBFF";
+       // Window_HTML = '<h3> Do you want to install GWS 8 </h3> <br><br> <button onclick="cont()"> continue </button>';
+        Window_Background_Color = " #010027";
+        Window(Create, "app", "ins");
+            GTG_INIT_FONT();
+            GTG_INIT_FONT_INSTALLATION_LOCATION("fonts");
+            addInbuiltFont(Console, "app");
+    }
+    
+     function cont_2() {
+       Window_HTML = '<h3> Select your device </h3> <br><br> <button onclick="dev_1();dev_3()"> HDD / SSD </button><br><br><button onclick="dev_2();dev_1()">Servers</button>';
+       Window_Height = 300;
+       Window_Width = 300;
+       Window_Title = "GWS 8 SETUP";
+       Window_Title_Text_Color = "White";
+       Window_Title_Background_Color = "#BACBFF";
+       // Window_HTML = '<h3> Do you want to install GWS 8 </h3> <br><br> <button onclick="cont()"> continue </button>';
+       Window_Background_Color = " #010027";
+       Window(Create, "app", "ins");
+       GTG_INIT_FONT();
+       GTG_INIT_FONT_INSTALLATION_LOCATION("fonts");
+       addInbuiltFont(Console, "app");
+     }
+    
+    function conf_py(){
+      config = "py";
+      cont_2();
+    }
+    function conf_c(){
+      cont_2();
+      config = "c";
+    }
+    function conf_js(){
+      cont_2();
+      config = "js";
+    }
+    
+    function dev_1(){
+      if (config === "c"){
+        Window_HTML = '<h3> OPs! </h3> <br><br> There was an error while installing GWS 8 Please restart the set up and in config section select Java Script and then select servers<a href=""><button> restart</button></a>';
+        Window_Height = 300;
+        Window_Width = 300;
+        Window_Title = "GWS 8 SETUP";
+        Window_Title_Text_Color = "White";
+        Window_Title_Background_Color = "#BACBFF";
+        // Window_HTML = '<h3> Do you want to install GWS 8 </h3> <br><br> <button onclick="cont()"> continue </button>';
+        Window_Background_Color = " #010027";
+        Window(Create, "app", "ins");
+        GTG_INIT_FONT();
+        GTG_INIT_FONT_INSTALLATION_LOCATION("fonts");
+        addInbuiltFont(Console, "app");
+      }
+      
+      else if (config === "py"){
+        
+        // if (config === "c") {
+          Window_HTML = '<h3> OPs! </h3> <br><br> There was an error while installing GWS 8 Please restart the set up and in config section select Java Script and then select servers<a href=""><button> restart</button></a>';
+          Window_Height = 300;
+          Window_Width = 300;
+          Window_Title = "GWS 8 SETUP";
+          Window_Title_Text_Color = "White";
+          Window_Title_Background_Color = "#BACBFF";
+          // Window_HTML = '<h3> Do you want to install GWS 8 </h3> <br><br> <button onclick="cont()"> continue </button>';
+          Window_Background_Color = " #010027";
+          Window(Create, "app", "ins");
+          GTG_INIT_FONT();
+          GTG_INIT_FONT_INSTALLATION_LOCATION("fonts");
+          addInbuiltFont(Console, "app");
+        // }
+      }
+    }
+    
+    
+    
+    function dev_2(){
+      if (config === "js"){
+        
+        Window_HTML = '<h3> Confirm to install GWS 8 </h3> <br><br> <a href="upd.html"><button> Install now</button></a>';
+        Window_Height = 300;
+        Window_Width = 300;
+        Window_Title = "GWS 8 SETUP";
+        Window_Title_Text_Color = "White";
+        Window_Title_Background_Color = "#BACBFF";
+        // Window_HTML = '<h3> Do you want to install GWS 8 </h3> <br><br> <button onclick="cont()"> continue </button>';
+        Window_Background_Color = " #010027";
+        Window(Create, "app", "ins");
+        GTG_INIT_FONT();
+        GTG_INIT_FONT_INSTALLATION_LOCATION("fonts");
+        addInbuiltFont(Console, "app");
+      }
+      else {
+        Window_HTML = '<h3> OPs! </h3> <br><br> There was an error while installing GWS 8 Please restart the set up and in config section select Java Script and then select servers<a href=""><button> restart</button></a>';
+        Window_Height = 300;
+        Window_Width = 300;
+        Window_Title = "GWS 8 SETUP";
+        Window_Title_Text_Color = "White";
+        Window_Title_Background_Color = "#BACBFF";
+        // Window_HTML = '<h3> Do you want to install GWS 8 </h3> <br><br> <button onclick="cont()"> continue </button>';
+        Window_Background_Color = " #010027";
+        Window(Create, "app", "ins");
+        GTG_INIT_FONT();
+        GTG_INIT_FONT_INSTALLATION_LOCATION("fonts");
+        addInbuiltFont(Console, "app");
+      }
+     
+    }
+    
+    function dev_3(){
+      if (config === "js"){
+        Window_HTML = '<h3> OPs! </h3> <br><br> There was an error while installing GWS 8 Please restart the set up and in config section select Java Script and then select servers<a href=""><button> restart</button></a>';
+        Window_Height = 300;
+        Window_Width = 300;
+        Window_Title = "GWS 8 SETUP";
+        Window_Title_Text_Color = "White";
+        Window_Title_Background_Color = "#BACBFF";
+        // Window_HTML = '<h3> Do you want to install GWS 8 </h3> <br><br> <button onclick="cont()"> continue </button>';
+        Window_Background_Color = " #010027";
+        Window(Create, "app", "ins");
+        GTG_INIT_FONT();
+        GTG_INIT_FONT_INSTALLATION_LOCATION("fonts");
+        addInbuiltFont(Console, "app");
+        
+      }
+    }
+    
+  
+  
+  </script>
+</body>
+</html>

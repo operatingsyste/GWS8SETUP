@@ -1,0 +1,14 @@
+body {
+    font-size: 15pt;
+    user-select: none;
+    background-color: white;
+}
+.window-bg-color-edit{
+  background-color: #BACBFF;
+  
+  background: #010027;
+}
+
+button{
+  background-image: linear-gradient(skyblue, white);
+}
